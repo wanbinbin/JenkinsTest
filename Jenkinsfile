@@ -1,11 +1,11 @@
-pipeline{
-  agent ony
-  
-  stages{
-    stage('Build'){
-      steps{
-        echo 'Hello Wolrd'
-      }
+pipeline {
+    agent any
+
+    stages {
+        stage('Hello') {
+            steps {
+                echo 'Hello World'
+            }
+        }
     }
-  }
 }
